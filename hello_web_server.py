@@ -17,7 +17,7 @@ def index():
     # get handle for names collection
     name = db.persons
 
-    # find a single document
+    # find a single document from database
     item = name.find_one()
     displayTxt = '<b>Hello %s</b>, <b> %s!</b>' % (item['first'], item['last'])
     return displayTxt
